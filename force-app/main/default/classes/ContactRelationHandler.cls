@@ -1,5 +1,5 @@
 public with sharing class ContactRelationHandler {
-    public void RelatedToCon(List<Contact> newList) {
+    public static void RelatedToCon(List<Contact> newList) {
         List<Contact_Relationship__c> crlist = new List<Contact_Relationship__c>();
         for(Contact c : newList){
             if(c.Contact_Relationship__c == True){
