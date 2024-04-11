@@ -1,18 +1,9 @@
-# Salesforce DX Project: Next Steps
+Create Multiple Branches with Conflicting Commits
+We know that merge conflicts come about when there are multiple commits on separate branches to the same sections of the same files. So, to practice resolving one, let’s set up a conflict.
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
-
-## How Do You Plan to Deploy Your Changes?
-
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
-
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+From main, create a new branch (new-branch-1), make changes to the README.md file, and create a pull request:
+Enter command: git checkout -b new-branch-1
+Make changes to the README.md file in your repository. Make a note of which lines you change.
+On new-branch-1, add and commit the changes:
+Enter command: git add README.md 
+Enter command: git commit -m "Changes to the README"
